@@ -1,0 +1,2 @@
+import {PageTitle} from '../../components/Site'; import {skills} from '../../data/portfolio';
+export default function Skills(){return <main className="inner"><PageTitle eyebrow="04 · Toolkit" title="Technologies I build with." lead="I care more about solving the problem than collecting logos. These are the tools I currently use and continue to deepen."/><section className="skills-grid">{skills.map((s,i)=><article key={s.group}><span>0{i+1}</span><h2>{s.group}</h2><div className="skill-list">{s.items.map(x=><b key={x}>{x}</b>)}</div></article>)}</section></main>}

@@ -1,0 +1,2 @@
+import {PageTitle} from '../../components/Site'; import {certificates} from '../../data/portfolio';
+export default function Certifications(){return <main className="inner"><PageTitle eyebrow="05 · Credentials" title="Learning beyond the classroom." lead="Selected training, workshops and certifications from my continuing technical learning journey."/><section className="cert-grid">{certificates.map(c=><article key={c.title}><div className="cert-image"><img src={c.image} alt={c.title}/></div><h2>{c.title}</h2></article>)}</section></main>}
